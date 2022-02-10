@@ -81,8 +81,7 @@ function my_func() {
                                 actors += movie_data["actors"][i]["peopleNm"] + ","
                             }
                             let producer = movie_data["directors"][0]["peopleNm"]
-                            names = "감독 : " + producer + "\n" + "배우 : " + actors.slice(0, -2)
-                            // alert(actors)
+                            names = "감독 : " + producer + "\n" + "배우 : " + actors.slice(0, -2)                            
                             let movieTd = $('<td></td>').text(names)
                             tr.append(movieTd)
                         },
